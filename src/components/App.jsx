@@ -12,8 +12,8 @@ const App = () => {
   const [neutral, setNeutral] = useState(0);
   const [bad, setBad] = useState(0);
 
-  const handleIncrementStatistic = option => {
-    switch (option) {
+  const handleIncrementStatistic = optionPressedButton => {
+    switch (optionPressedButton) {
       case 'good':
         setGood(state => state + 1);
         break;
